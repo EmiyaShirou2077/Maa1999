@@ -1,0 +1,16 @@
+{
+    "AutoClick": {
+        "timeout": 30000,
+        "next": [
+            "StagePromotionComplete"
+        ],
+        "interrupt": [
+            "StagePromotionFlagInCombat",
+            "StagePromotionCombatVictory",
+            "StagePromotionSkip",
+            "StagePromotionSkipConfirm",
+            "StagePromotionFlagInStoryStage",
+            "StagePromotionStartAction"
+        ]
+    }
+}
