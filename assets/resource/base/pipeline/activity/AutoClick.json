@@ -1,16 +1,48 @@
 {
-    "AutoClick": {
-        "timeout": 30000,
-        "next": [
-            "StagePromotionComplete"
-        ],
-        "interrupt": [
+   "AutoClick": {
+       "timeout": 30000,
+       "next": [
+           "StagePromotionComplete"
+       ],
+       "interrupt": [
             "StagePromotionFlagInCombat",
             "StagePromotionCombatVictory",
             "StagePromotionSkip",
             "StagePromotionSkipConfirm",
             "StagePromotionFlagInStoryStage",
-            "StagePromotionStartAction"
+            "StagePromotionStartAction",
+            "AutoClickTrace",
+            "AutoClickClickSomewhere"
         ]
+    },
+    "AutoClickClickSomewhere": {
+        "action": "click",
+        "target": [1247,343,7,11]
+    },
+    "AutoClickTrace": {
+        "recognition": "OCR",
+        "expected": [
+            "小径", 
+            "交流", 
+            "记录", 
+            "群", 
+            "既往", 
+            "拯救", 
+            "准则", 
+            "广告", 
+            "感谢墙", 
+            "礼仪", 
+            "敲响", 
+            "信封", 
+            "动物", 
+            "安全", 
+            "记录",
+            "问与答",
+            "时节",
+            "霉运"
+        ],
+        "roi": [281,175,209,70],
+        "action": "Click",
+        "target": [756,373,26,23]
     }
 }
